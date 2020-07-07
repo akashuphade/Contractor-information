@@ -5,19 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Contract extends Model
+class ContractWork extends Model
 {
     use SoftDeletes;
 
+
     protected $guarded = [];
 
-    public function companyType()
+    public function roadType()
     {
-        return $this->belongsTo(CompanyType::class);
+        return $this->belongsTo(RoadType::class);
     }
 
-    public function works()
+    public function contract()
     {
-        return $this->hasMany(ContractWork::class);
+        return $this->belongsTo(Contract::class);
     }
 }

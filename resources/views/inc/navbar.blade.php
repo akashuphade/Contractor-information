@@ -8,6 +8,12 @@
         <li class="nav-item float-right">
             <a class="nav-link" href="/contracts/records/deleted">Deleted Contractors </a>
         </li>
+        <li class="nav-item float-right">
+            <a class="nav-link" href="/works/records/active">Active Works </a>
+        </li>
+        <li class="nav-item float-right">
+            <a class="nav-link" href="/works/records/deleted">Deleted Works </a>
+        </li>
     </ul>
 
   </nav>

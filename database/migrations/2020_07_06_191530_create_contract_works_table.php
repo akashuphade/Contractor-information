@@ -20,7 +20,6 @@ class CreateContractWorksTable extends Migration
             $table->date('start_date');
             $table->date('completion_date');
             $table->integer('penalty_rate');
-            $table->string('location');
             $table->string('addr_1');
             $table->string('addr_2')->nullable();
             $table->string('city');

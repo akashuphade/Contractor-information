@@ -5,7 +5,7 @@
         <div class="card w-75">
             <div class="card-header">
                 <a href="/contracts" class="btn btn-primary float-left">Back</a>
-                <h3 class=" text-info text-center">Contractor Details</h3>
+                <h3 class=" text-info text-center">Add Contractor</h3>
             </div>
             <div class="card-body">
                 <form method="POST" action="/contracts">

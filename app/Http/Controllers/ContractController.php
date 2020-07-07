@@ -74,7 +74,7 @@ class ContractController extends Controller
      */
     public function edit($id)
     {
-        $contractor = Contract::findOrFail($id);
+        $contractor = Contract::withTrashed()->findOrFail($id);
         $companyTypes = CompanyType::all();
         return view('contract.edit')->with(['contractor'=> $contractor, 'companyTypes'=>$companyTypes]);
     }
@@ -88,7 +88,7 @@ class ContractController extends Controller
      */
     public function update(ContractorRequest $request, $id)
     {
-        $contractor = Contract::findOrFail($id);
+        $contractor = Contract::withTrashed()->findOrFail($id);
 
         $contractor->company_name = $request->input('company_name');
         $contractor->company_type_id = $request->input('company_type');

@@ -17,7 +17,7 @@
                             <th>Contact Person</th>
                             <th>Contact Number</th>
                             <th>Email</th>
-                            <th width="20%">Action</th>
+                            <th width="30%">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -45,7 +45,8 @@
                                     @endif
 
                                     <a href="/contracts/{{$contractor->id}}/edit" class="btn btn-primary btn-sm">Edit</a>
-                                    <a href="/works" class="btn btn-primary btn-sm">Works</a>
+                                    <a href="/contracts/{{$contractor->id}}/all" class="btn btn-primary btn-sm">Works</a>
+                                    <a href="/contracts/{{$contractor->id}}/expired" class="btn btn-primary btn-sm">Expired Works</a>
                                 </td>
                             </tr>
                         @endforeach
